@@ -9,71 +9,74 @@
     --fontTitle-frankRuhl: 'Frank Ruhl Libre', serif;
     --fontText-roboto: 'Roboto Slab', serif;
 }
-
+/* Reset de estilos común para todos los elementos */
 * {
     margin: 0;
     padding: 0;
-    
     list-style: none;
     text-decoration: none;
 }
-
+/* Establecimiento del tamaño de fuente base y modelo de caja */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
-
+body {
+    font-size: 16px;
+    font-family: var(--fontText-roboto);
+}
+/* Herencia del modelo de caja a todos los elementos descendientes */
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
+/* Estilos comunes para los títulos h1 y h2 */
 h1, h2 {
     margin: 0;
     text-align: center;
     font-family: var(--fontTitle-frankRuhl);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.284);
 }
-
-body {
-    font-size: 16px;
-    font-family: var(--fontText-roboto);
-}
-
+/* Definición de una clase dflex*/
 .dflex {
     display: flex;
 }
-
+/* Estilos comunes para contenedores con clase container */
 .container {
     max-width: 120rem;
     padding: 20px;
     margin: 0 auto;
 }
-
+.box-Shadow {
+    box-shadow: 4px 3px 20px 0px rgba(0,0,0,0.75);
+}
+/* Encabezado */
 header {
     background-color: var(--color-dryBlue);
 }
-
+/* Estilos para la clase header-title */
 .header-title {
     width: 100%;
     background-color: var(--color-dryBlueLight);
 }
-
+/* Estilos para el título dentro de header-title */
 .header-title .title {
     padding: 15px;
     font-size: 3rem;
     color: var(--color-white);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.332);
 }
-
+/* Estilos para el span dentro de header-title */
 .header-title .title span {
     font-size: 1.8rem;
     color: var(--color-dryYellow);
     font-family: var(--fontTitle-dancingScript);
     font-weight: bolder;
 }
+
 .navBar-color {
     height: auto;
 }
+
 .navBar-color {
     display: flex;
     justify-content: space-between;
@@ -162,11 +165,12 @@ header {
 }
 
 .hero {
+    position: relative;
     background-attachment: fixed;
     background-image: url(../img/download.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 350px;
+    min-height: 350px; 
 }
 
 .hero-container {
@@ -193,20 +197,145 @@ header {
 }
 
 .hero-container a {
-    color: black;
+    color: rgb(24, 11, 88);
     font-weight: bold;
     transition: all 300ms ease;
-    padding: 5px;
+    padding: 7px;
     background-color: rgba(240, 255, 255, 0.59);
     border-radius: 10px;
+    width: auto;
+    text-align: center;
 }
 
 @media (max-width: 450px) {
     .hero-container {
         max-width: 250px;
     }
+    .hero-container a {
+        width: 60%;
+    }
 }
 
-html {
-  box-sizing: border-box;
+.services-section {
+    margin-top: 30px;
+    background-color: var(--color-dryBlue);
+    color: var(--color-white);
+    border-radius: 10px;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.258);
+}
+
+.services-section h2 {
+    font-size: 4rem;
+}
+
+.services-container {
+    margin: 50px; 
+}
+
+.services-container__items {
+    margin-right: 15px;
+    padding: 10px;
+    background-color: rgba(120, 120, 120, 0.417);
+    border-radius: 15px;   
+}
+
+.services-container__items p {
+    line-height: 25px;
+}
+
+.service-title {
+    display: flex; 
+    align-items: center;
+    padding-bottom: 10px;   
+}
+
+.service-title h3 {
+    padding-right: 10px;  
+}
+
+.service-title svg {
+    color: var(--color-dryYellow);
+}
+
+@media (max-width: 1200px) {
+    .services-section {
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 35px;
+    }
+
+    .services-container__items {
+        max-width: 500px;
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+    .service-title {
+        justify-content: center;
+    }
+}
+
+/* Projects Section */
+
+.project-section {
+    margin-top: 20px;
+}
+
+.project-section__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-section h2 {
+    font-size: 4rem;
+    margin-right: 5px;
+}
+
+.icon-tabler-hand-finger {
+    transform: rotate(-180deg);
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(
+            250px,
+            1fr
+        )
+    );
+    grid-gap: 16px;
+    padding: 15px;
+}
+
+.project-section__item {
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.project-section__item img {
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+    border-radius: 15px;
+    
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.531);
+}
+  
+ @media (max-width: 768px) {
+    .project-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+  
+@media (max-width: 480px) {
+    .project-section {
+        grid-template-columns: 1fr;
+    }
 }
