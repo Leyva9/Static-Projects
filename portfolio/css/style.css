@@ -409,14 +409,9 @@ header {
     gap: 20px;
     justify-content: center;
     align-items: center;
-}
-
-.testimonials-container__item {
-    padding: 15px;
-}
-
-.testimonials-container__item svg {
-    color: var(--color-dryYellow);    
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .testimonials-container__item {
@@ -428,6 +423,12 @@ header {
     background-color: rgba(113, 109, 109, 0.881);
     margin: 0 10px;
     border-radius: 5px;
+    padding: 15px;
+    scroll-snap-align: center;
+}
+
+.testimonials-container__item svg {
+    color: var(--color-dryYellow);    
 }
 
 .testimonials-container__item p {
@@ -466,13 +467,13 @@ header {
 
 @media (max-width: 1200px) {
     .testimonials-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0;
+        align-items: center;  
+        border-radius: 0; 
+        justify-content: flex-start;
     }
     .testimonials-container__item {
         max-width: 500px;
+        min-width: 320px;
         padding: 15px;
         margin-block: 25px;
     }
