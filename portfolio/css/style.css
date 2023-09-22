@@ -544,6 +544,7 @@ header {
 }
 
 .submit-container input {
+    width: 50%;
     color: black;
     background-color: var(--color-white);
 }
