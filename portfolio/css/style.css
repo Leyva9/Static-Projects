@@ -20,6 +20,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 body {
     font-size: 16px;
@@ -87,7 +88,7 @@ h2 {
 .button:hover{
     cursor: pointer;
 }
-/* Encabezado */
+/* Header */
 header {
     background-color: var(--color-dryBlue);
 }
@@ -202,6 +203,7 @@ header {
     display: flex;
 }
 
+/* Hero */
 .hero {
     position: relative;
     align-items: center;
@@ -243,6 +245,16 @@ header {
     }
 }
 
+/* .services-section,
+.navBar-color,
+.project-section,
+.testimonials-section,
+.contact-section {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+} */
+
+/* Services */
 .services-section {
     margin-top: 30px;
     background-color: var(--color-dryBlue);
@@ -486,14 +498,12 @@ header {
     }
 }
 
-/* Formulario */
+/* Contact Form */
 .contact-section h2{
     margin-bottom: 1.5rem;
 }
 
 .form {
-    /* background-color: rgba(108, 222, 240, 0.374); */
-    /* background-color: #e5d18378; */
     background-color: #43628a;
     box-shadow: 2px 1.5px 5px rgba(0, 0, 0, 0.678);
     width: min(60rem, 100%); /*Utlizar el valor mas pequeno */
