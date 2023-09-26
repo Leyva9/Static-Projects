@@ -22,7 +22,7 @@ Feel free to reach out if you have any questions or if you'd like to discuss pot
 
 ## Contact Information
 
-- Name: [Your Name]
-- Email: [Your Email]
-- LinkedIn: [Your LinkedIn Profile]
-- Website: [Your Personal Website]
+- Name: Luis Manuel Leyva-Hernandez
+- Email: [leyva0919@gmail.com]
+- LinkedIn: [[Your LinkedIn Profile](https://www.linkedin.com/in/luis-manuel-l-07a984103/)https://www.linkedin.com/in/luis-manuel-l-07a984103/]
+- Website: [[Your Personal Website](https://leyva9.github.io/Static-Projects/portfolio/index.html)https://leyva9.github.io/Static-Projects/portfolio/index.html]
