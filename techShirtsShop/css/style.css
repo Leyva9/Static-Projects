@@ -57,10 +57,47 @@
 }
 
 /* Header */
-
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.header__logo {
+  margin: 3rem 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primaryDark);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer__text {
+  text-align: center;
+  font-family: var(--primaryFont);
+  font-size: 2.2rem;
+}
+
+/* Navigation */
+.navigation {
+  background-color: var(--primaryDark);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.navigation__link {
+  font-family: var(--primaryFont);
+  color: var(--white);
+  font-size: 30px;
+}
+
+.navigation__link--active,
+.navigation__link:hover {
+  color: var(--secundary);
+}
+
