@@ -1,8 +1,8 @@
-# Tienda de Ropa "DevTShirt Shop"
+# Tienda de Ropa "[DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html)"
 
 ![Banner de FashionWeb](img/banner.png)
 
-Bienvenidos a la página web de DevTShirt Shop, tu destino para la mejor selección de ropa con marcas de alta calidad. En FashionWeb, nos enorgullece ofrecer una amplia gama de productos de moda para todas las edades y géneros.
+Bienvenidos a la página web de [DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html), tu destino para la mejor selección de ropa con marcas de alta calidad. En [DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html), nos enorgullece ofrecer una amplia gama de productos de moda para todas las edades y géneros.
 
 ## Vista previa de la Página Web
 
@@ -22,10 +22,10 @@ Bienvenidos a la página web de DevTShirt Shop, tu destino para la mejor selecci
 - Compra en línea segura y fácil.
 - Opciones de pago seguras y variadas.
 
-## Cómo Usar DevTShirt Shop
+## Cómo Usar [DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html)
 
 1. Visita la [página de inicio de FashionWeb](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html).
-PD: Esta pagina aun esta en desarrollo
+PD: Esta pagina aun esta en desarrollo.
 
 ## Tecnologías Utilizadas
 
