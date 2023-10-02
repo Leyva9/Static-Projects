@@ -1,0 +1,53 @@
+:root {
+    /* Colors */
+    --primary-color: ;
+    --secundary-color: ;
+    /* Fonts */
+    --primaryFont: ;
+    --secundaryFont: ;
+}
+
+/* Responsive Design */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+/* Globals */
+body { 
+    line-height: 1.5; 
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+img { width: 100%; }
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: var(--primaryFont);
+    margin: 0;
+}
+
+h1 { font-size: 6rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+
+/* Utility Classes */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
