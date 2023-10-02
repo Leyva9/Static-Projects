@@ -1,10 +1,11 @@
 :root {
     /* Colors */
-    --primary-color: ;
-    --secundary-color: ;
+    --primary-color: #784D3c;
+    --white-color: #ffffff;
+    --black-color: #000000;
     /* Fonts */
-    --primaryFont: ;
-    --secundaryFont: ;
+    --primaryFont: 'PT Sans', sans-serif; ;
+    --secundaryFont: 'Open Sans', sans-serif;
 }
 
 /* Responsive Design */
@@ -23,6 +24,8 @@ html {
 /* Globals */
 body { 
     line-height: 1.5; 
+    font-size: 1.6rem;
+    font-family: var(--secundaryFont);
 }
 
 p {
@@ -36,7 +39,6 @@ a { text-decoration: none; }
 img { width: 100%; }
 
 h1, h2, h3 {
-    text-align: center;
     font-family: var(--primaryFont);
     margin: 0;
 }
@@ -44,10 +46,81 @@ h1, h2, h3 {
 h1 { font-size: 6rem; }
 h2 { font-size: 4rem; }
 h3 { font-size: 3rem; }
+h4 { font-size: 2.6rem; }
 
 /* Utility Classes */
 .container {
     max-width: 120rem;
+    width: 90%;
     margin: 0 auto;
 }
 
+.text-center { text-align: center; }
+
+/* Header */
+.header {
+    min-height: 60rem;
+    background-image: url(../img/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header__text {
+    text-align: center;
+    color: var(--white-color);
+    margin-top: 14rem;
+}
+
+/* NavBar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar__brand { 
+    color: var(--white-color);
+}
+
+.brand {
+    font-weight: 300;
+}
+
+.navBar__brand span{
+    font-weight: 700;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation__link {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    transition: all 200ms ease;
+}
+
+.navigation__link-active {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation {
+        margin-top: 3rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .navigation__link {
+        font-size: 2.2rem;
+    }
+    .header__text {
+        margin-top: 6rem;
+    }
+}
