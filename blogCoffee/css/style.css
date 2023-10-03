@@ -204,3 +204,23 @@ h4 { font-size: 2.6rem; }
     background-color: var(--black-color);
 }
 
+/* About */
+.about-title { margin-block: 4rem; }
+
+.about__text { font-size: 1.6rem; }
+
+.about__img { margin-bottom: 1rem; }
+@media (min-width: 768px) {
+    .about-title { text-align: center; }
+    .about-grid {
+        display: grid;
+        grid-template-areas: "img txt";
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .about__img { grid-area: img; }
+    .about__text { grid-area: txt; }
+}
+@media (min-width: 992px) {
+    .about__text { font-size: 1.9rem; }
+}
