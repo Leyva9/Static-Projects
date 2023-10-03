@@ -55,8 +55,6 @@ h4 { font-size: 2.6rem; }
 
 .text-center { text-align: center; }
 
-.d-flex { display: flex; }
-
 /* Header */
 .header {
     min-height: 55rem;
@@ -105,15 +103,18 @@ h4 { font-size: 2.6rem; }
         flex-direction: column;
         align-items: center;
     }
+    
     .navigation {
         margin-top: 3rem;
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
+
     .navigation__link {
         font-size: 2.2rem;
     }
+
     .header__text {
         margin-top: 6rem;
     }
@@ -194,6 +195,7 @@ h4 { font-size: 2.6rem; }
         border: none; 
         padding: 0;
     }
+
     .shop-item__button { border-radius: 1rem; }
 }
 
@@ -210,6 +212,7 @@ h4 { font-size: 2.6rem; }
 .about__text { font-size: 1.6rem; }
 
 .about__img { margin-bottom: 1rem; }
+
 @media (min-width: 768px) {
     .about-title { text-align: center; }
     .about-grid {
@@ -221,6 +224,33 @@ h4 { font-size: 2.6rem; }
     .about__img { grid-area: img; }
     .about__text { grid-area: txt; }
 }
+
 @media (min-width: 992px) {
     .about__text { font-size: 1.9rem; }
 }
+
+/* Courses */
+.courses-title { 
+    text-align: center; 
+    margin-block: 4rem;
+}
+
+.courses-container { 
+    display: grid; 
+    row-gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .courses-grid {
+        display: grid;
+        grid-template-areas: "img txt";
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+.course p:not(:last-child) { font-weight: bold; }
+
+.course p span { font-weight: normal; }
+
+.course *:not(:last-child) { margin-bottom: 2rem; }
