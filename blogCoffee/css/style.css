@@ -150,16 +150,18 @@ h4 { font-size: 2.6rem; }
 
     .button {
         display: block;
-        padding: 1rem;
-        border-top-right-radius: .5rem;
-        border-top-left-radius: .5rem;
+        padding: 1rem; 
         font-family: var(--primaryFont);
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
         color: var(--white-color);
     }
-    .entry__button { background-color: var(--black-color); }
+    .entry__button { 
+        background-color: var(--black-color); 
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+    }
 
     @media (min-width: 768px) {
         .button { max-width: 20rem; }
@@ -230,7 +232,7 @@ h4 { font-size: 2.6rem; }
 }
 
 /* Courses */
-.courses-title, .about-title, .entry-title { 
+.courses-title, .about-title, .entry-title, .contact-title { 
     text-align: center; 
     margin-block: 4rem;
 }
@@ -257,3 +259,60 @@ h4 { font-size: 2.6rem; }
 
 /* Entry */
 .entry__text { margin-bottom: 2rem; }
+
+/* Contact */
+.contact-bg { 
+    height: 40rem;
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact-form {
+    background-color: var(--white-color);
+    margin: -4rem auto 0 auto;
+    box-shadow: 1.5px 0.5px 8px black;
+    width: 95%;
+    padding: 3rem;
+    border-radius: .6rem;
+}
+
+.ground {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ground__label {
+    flex: 0 0 8rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+.ground__field {
+    width: 2rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    flex: 1;
+}
+
+.campo__field--textarea {
+    min-height: 10rem;
+}
+
+.contact--button {
+    border: unset;
+    background-color: var(--black-color);
+    cursor: pointer;
+    border-radius: .5rem;
+    width: 15rem;
+}
+
+@media (max-width: 768px) {
+    .ground { 
+        gap: 1rem;   
+    }
+}
