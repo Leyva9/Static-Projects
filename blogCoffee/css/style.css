@@ -230,7 +230,7 @@ h4 { font-size: 2.6rem; }
 }
 
 /* Courses */
-.courses-title { 
+.courses-title, .about-title, .entry-title { 
     text-align: center; 
     margin-block: 4rem;
 }
@@ -254,3 +254,6 @@ h4 { font-size: 2.6rem; }
 .course p span { font-weight: normal; }
 
 .course *:not(:last-child) { margin-bottom: 2rem; }
+
+/* Entry */
+.entry__text { margin-bottom: 2rem; }
