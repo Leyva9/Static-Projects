@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang="es">
     <!-- Head -->
     <head>
         <!-- Metadatos -->
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <meta name='description' content='SEO description'>
-        <meta name='keywords' content='HTML, CSS, Java Script, React'>
-        <meta name='robot' content='index, follow'>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SEO description">
+        <meta name="keywords" content="HTML, CSS, Java Script, React">
+        <meta name="robot" content="index, follow">
+
         <!-- Título -->
         <title>Web Title</title>
+
         <!-- Favicon -->
-        <link rel='icon' type='image/x-icon' href='./img/logo.png'>
+        <link rel="icon" type="image/x-icon" href="./img/logo.png">
+
+        <!-- Prefetch -->
+        <link rel="prefetch" href="courses.html" as="document">
+
         <!-- Styles -->
-        <link rel='preload' href='https://necolas.github.io/normalize.css/8.0.1/normalize.css' as='style'>
-        <link rel='stylesheet' href='https://necolas.github.io/normalize.css/8.0.1/normalize.css'>
-        <link rel='preload' href='css/style.css' as='style'>
-        <link rel='stylesheet' href='css/style.css'>
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as='font'>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
         <!-- Script -->
-        <script src='./js/main.js'></script>
+        <!-- <link rel="preload" href="./js/main.js" as="script">
+        <script src="./js/main.js"></script> -->
     </head>
     <body>
         <!-- Header -->
@@ -49,7 +57,10 @@
                 <h3 class="main-content__title">Our Blog</h3> 
                 <article class="entry">
                     <div class="entry__img">
-                        <img src="./img/blog1.webp" alt="blog image">
+                        <picture>
+                            <source loading="lazy" srcset="./img/blog1.webp" type="image/webp">
+                            <img src="./img/blog1.jpg" alt="blog image" loading="lazy">
+                        </picture>
                     </div>
                     <h4>Types of coffee bean.</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem atque deserunt architecto nulla dolorum harum, ratione, rem, repellat cum iure minima eos soluta odio id! Facilis minus nisi reiciendis?</p>
@@ -57,7 +68,10 @@
                 </article>
                 <article class="entry">
                     <div class="entry__img">
-                        <img src="./img/blog2.webp" alt="blog image">
+                        <picture>
+                            <source loading="lazy" srcset="./img/blog2.webp" type="image/webp">
+                            <img src="./img/blog2.jpg" alt="blog image" loading="lazy">
+                        </picture>
                     </div>
                     <h4>The Science Behind Espresso: Perfecting Your Shot</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem atque deserunt architecto nulla dolorum harum, ratione, rem, repellat cum iure minima eos soluta odio id! Facilis minus nisi reiciendis?</p>
@@ -65,7 +79,10 @@
                 </article>
                 <article class="entry">
                     <div class="entry__img">
-                        <img src="./img/blog3.webp" alt="blog image">
+                        <picture>
+                            <source loading="lazy" srcset="./img/blog3.webp" type="image/webp">
+                            <img src="./img/blog3.jpg" alt="blog image" loading="lazy">
+                        </picture>
                     </div>
                     <h4>The Art of Coffee Brewing: Unlocking Flavor and Aroma</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem atque deserunt architecto nulla dolorum harum, ratione, rem, repellat cum iure minima eos soluta odio id! Facilis minus nisi reiciendis?</p>
