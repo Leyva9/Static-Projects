@@ -6,7 +6,7 @@
 
 ### Vista previa desde Desktop
 
-![BlogDeCafé](img/page-desktop.jpeg)
+![BlogDeCafé](img/pageDesktop.jpeg)
 
 ## Cómo Usar BlogDeCafé
 
