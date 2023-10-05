@@ -2,17 +2,13 @@
 
 ![Banner de FashionWeb](img/banner.png)
 
-Bienvenidos a la página web de [DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html), tu destino para la mejor selección de ropa con marcas de alta calidad. En [DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html), nos enorgullece ofrecer una amplia gama de productos de moda para todas las edades y géneros.
+Bienvenidos a la página web de [DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html), tu destino para la mejor selección de ropa con marcas de tecnologías usadas por desarrolladores.
 
 ## Vista previa de la Página Web
 
 ### Versión para Desktop
 
 ![Página de Inicio en Desktop](img/desktop.jpeg)
-
-### Versión para Mobile
-
-![Página de Inicio en Mobile](img/mobile.jpeg)
 
 ## Características Destacadas
 - Navegación sencilla y amigable para el usuario.
@@ -48,4 +44,4 @@ FashionWeb se ha desarrollado utilizando las siguientes tecnologías web:
 
 Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
 
-¡Esperamos que disfrutes de tu experiencia de compra en DevTShirt Shop!
+¡Esperamos que disfrutes de tu experiencia en DevTShirt Shop!
