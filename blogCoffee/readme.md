@@ -6,7 +6,7 @@
 
 ### Vista previa desde Desktop
 
-![Café del Día](img/desktop.jpg)
+![Café del Día](img/page-desktop.jpg)
 
 ## Cómo Usar Café Con Sabor
 
