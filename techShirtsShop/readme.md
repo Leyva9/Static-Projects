@@ -15,13 +15,9 @@ Bienvenidos a la página web de [DevTShirt Shop](https://leyva9.github.io/Static
 ![Página de Inicio en Mobile](img/mobile.jpeg)
 
 ## Características Destacadas
-
-- Amplia selección de ropa de moda.
-- Ropa de marcas de renombre.
 - Navegación sencilla y amigable para el usuario.
-- Compra en línea segura y fácil.
-- Opciones de pago seguras y variadas.
-
+- Ropa con etiquetas atractivas para desarroladores.
+  
 ## Cómo Usar [DevTShirt Shop](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html)
 
 1. Visita la [página de inicio de FashionWeb](https://leyva9.github.io/Static-Projects/techShirtsShop/index.html).
