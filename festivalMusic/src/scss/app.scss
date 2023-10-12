@@ -1,6 +1,4 @@
-$variable: red;
+// @import 'base/var'; //Esta es la forma antigua de importar los diferentes scss sin embargo es la que mas se utiliza
 
-body {
-    background-color: $variable;
-}
+@use 'base';
 
