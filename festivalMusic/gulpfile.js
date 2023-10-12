@@ -4,7 +4,7 @@ const plumber = require("gulp-plumber");
 
 function css( cb ) {   
     src('src/scss/**/*.scss') //Identificar el archivo de SASS
-        .pipe( plumber() )
+        .pipe( plumber() ) //Se utiliza para que no se detenga el watch en caso de que haya error en la compilacion
         .pipe( sass() )  //Compilarlo
         .pipe( dest('build/css') ); //Guardarlo en el disco duro
 
