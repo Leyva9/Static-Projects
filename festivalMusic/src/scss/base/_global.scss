@@ -27,7 +27,17 @@ p {
 
 a { text-decoration: none; }
 
+video { 
+    width: 100%; 
+    display: block;
+}
+
+img { 
+    width: 100%; 
+    display: block;
+}
+
 .container {
-    max-width: min(95%, 120rem);
+    width: min(95%, 120rem);
     margin: 0 auto;
 }
