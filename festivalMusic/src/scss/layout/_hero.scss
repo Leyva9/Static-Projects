@@ -2,7 +2,25 @@
 @use '../base/mixins' as m;
 
 .hero {
+    @include m.phone {
+        max-height: 70vh;
+    }
+    @include m.tablet {
+        max-height: 80vh;
+    }
+    @include m.desktop {
+        max-height: 90vh;
+    }
+    @include m.desktopXL {
+        max-height: 100vh;
+    }
     position: relative;
+    max-height: 60vh;
+    overflow: hidden; // Oculta el excedente que pasa de 100vh
+    min-height: 50rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 
     .overlay {
         position: absolute;
@@ -12,42 +30,42 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .video-container {
-        h2 {
-            @include m.phone {
-                font-size: 4rem;
-            }
-            @include m.tablet {
-                font-size: 5rem;
-            }
-            @include m.desktop {
-                font-size: 7rem;
-            }
-            margin: 0;
-            font-size: 3.5rem;
-            text-shadow: 2px 1.5px 5px rgba(0, 0, 0, 0.342);
-            color: v.$white;
-        }
-
-        p {
-            @include m.phone {
-                font-size: 1.8rem;
-            }
-            @include m.tablet {
-                font-size: 2.4rem;
-            }
-            @include m.desktop {
-                font-size: 3rem;
-            }
-            color: v.$white;
-            text-shadow: 2px 1.5px 5px rgba(0, 0, 0, 0.404);
-            display: inline-block;
-            padding: .5rem 2.5rem;
-            background-color: v.$pink;
-            margin: .5rem 0;
-        }
-    }
+        z-index: 1;
+    }  
 }
 
+.videoText-container {
+    h2 {
+        @include m.phone {
+            font-size: 4rem;
+        }
+        @include m.tablet {
+            font-size: 5rem;
+        }
+        @include m.desktop {
+            font-size: 7rem;
+        }
+        margin: 0;
+        font-size: 3.5rem;
+        text-shadow: 2px 1.5px 5px rgba(0, 0, 0, 0.342);
+        color: v.$white;
+    }
+
+    p {
+        @include m.phone {
+            font-size: 1.8rem;
+        }
+        @include m.tablet {
+            font-size: 2.4rem;
+        }
+        @include m.desktop {
+            font-size: 3rem;
+        }
+        color: v.$white;
+        text-shadow: 2px 1.5px 5px rgba(0, 0, 0, 0.404);
+        display: inline-block;
+        padding: .5rem 2.5rem;
+        background-color: v.$pink;
+        margin: .5rem 0;
+    }
+}

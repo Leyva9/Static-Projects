@@ -1,4 +1,5 @@
-@use 'var' as v;
+@use '../base/var' as v;
+@use '../base/mixins' as m;
 
 html {
     font-size: 62.5%;
@@ -28,8 +29,11 @@ p {
 a { text-decoration: none; }
 
 video { 
-    width: 100%; 
+    width: auto;
     display: block;
+    @include m.desktop {
+        width: 100%;
+    }
 }
 
 img { 
