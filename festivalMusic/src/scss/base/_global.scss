@@ -13,9 +13,11 @@ html {
 body {
     font-family: v.$main_font;
     font-size: 1.6rem;
-
     &.body-fixed {
         overflow: hidden;
+    }
+    &.bodyScroll {
+        padding-top: 12.3rem;
     }
 }
 
