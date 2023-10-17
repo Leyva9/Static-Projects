@@ -57,9 +57,17 @@ function imgAvif(cb) {
     cb();
 }
 
+// JavaScript
+function javascript(cb) {
+    src('./src/js/**/*.js')
+        .pipe(dest('./build/js'));
+    cb();
+}
+
 exports.css = css; // Permite que nuestra funcion este disponible para usar con el nombre de styles y se ejecuta en la consola de la siguiente manera, 'npx gulp styles'
 exports.gulpwebp = gulpWebp; 
 exports.imgMin = imgMin;
 exports.imgAvif = imgAvif;
+exports.javascript = javascript;
 
-exports.dev = parallel( imgAvif, imgMin, gulpWebp, dev );
+exports.dev = parallel( javascript, imgAvif, imgMin, gulpWebp, dev );
