@@ -20,6 +20,7 @@ function css( cb ) {
 
 function dev(cb) {
     watch('src/scss/**/*.scss', css)
+    watch('src/js/**/*.js', javascript)
 
     cb();
 }
@@ -65,6 +66,7 @@ function javascript(cb) {
 }
 
 exports.css = css; // Permite que nuestra funcion este disponible para usar con el nombre de styles y se ejecuta en la consola de la siguiente manera, 'npx gulp styles'
+exports.js = javascript; 
 exports.gulpwebp = gulpWebp; 
 exports.imgMin = imgMin;
 exports.imgAvif = imgAvif;
