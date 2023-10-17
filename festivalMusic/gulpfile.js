@@ -30,7 +30,7 @@ function gulpWebp(cb) {
         quality: 50
     };
 
-    src("./src/img/**/*.{jpg, png}") 
+    src("./src/img/**/*.{jpg,png}") 
         .pipe( webp( options ) )
         .pipe( dest( "./build/img" ) )
 
@@ -41,7 +41,7 @@ function imgMin(cb) {
     const options = {
         optimizationLevel: 3
     }
-    src("./src/img/**/*.{jpg, png}")
+    src("./src/img/**/*.{jpg,png}")
         .pipe( cache( imagemin( options ) ) )
         .pipe( dest("./build/img") )
     cb();
