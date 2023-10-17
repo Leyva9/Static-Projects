@@ -1,0 +1,69 @@
+@use '../base/var' as v;
+@use '../base/mixins' as m;
+
+.lineup {
+    background-color: v.$pink;
+    padding: 5rem 0;
+
+    h3, p {
+        text-align: center;
+        color: v.$white;
+    }
+    .day {
+        text-transform: uppercase;
+        margin: 5rem 0;
+        font-weight: bold;
+    }
+}
+
+.stage-container {
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+   p {
+        color: v.$black;
+   } 
+}
+
+.stage {
+    padding-top: 2rem;
+    ul { @include m.list-reset; }
+    li {
+        padding: 2.5rem;
+        font-weight: bold;
+        display: block;
+        span { font-weight: normal; }
+    }
+    .stage-name {
+        &:after {
+            content:'';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+}
+
+.rock .stage-name:after {
+    background-image: url(../img/icono_rock.png);
+}
+.edm .stage-name:after {
+    background-image: url(../img/icono_edm.png);
+}
+
+.bg-yellow {
+    background-color: v.$yellow;
+    li:nth-child(2n+1) {
+        background-color: darken(v.$yellow, 15%);
+    }
+}
+.bg-green {
+    background-color: v.$green;
+    li:nth-child(2n+1) {
+        background-color: darken(v.$green, 15%);
+    }
+}
