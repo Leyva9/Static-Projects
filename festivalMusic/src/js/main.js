@@ -19,6 +19,8 @@ function startapp() {
         }
     });
 
+    fixedNav();
+    scrollNav();
     createGallery();
 }
 
@@ -59,19 +61,37 @@ function showimage(img) {
         body.classList.remove('body-fixed');
     }
 
-    // Crear boton para cerrar el overlay
-    const buttonOverlay = document.createElement('P');
-    buttonOverlay.textContent = 'X';
-    buttonOverlay.classList.add('close-button')
-    buttonOverlay.onclick = () => {
-        overlay.remove();
-        body.classList.remove('body-fixed');
-    }
-    overlay.appendChild(buttonOverlay);
-
     // Lo anade al HTML
     const body = document.querySelector('body');
     body.appendChild(overlay);
     body.classList.add('body-fixed');
 }
 
+function scrollNav() {
+    const links = document.querySelectorAll('.main-nav a');
+    links.forEach( link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+
+            const scrollSection = e.target.attributes.href.value;
+            const section = document.querySelector(scrollSection);
+            section.scrollIntoView( { behavior: "smooth" } );
+        });
+    })
+}
+
+function fixedNav() {
+    const navBar = document.querySelector('.header');
+    const hero = document.querySelector('.concerts-about');
+    const body = document.querySelector('body');
+
+    window.addEventListener('scroll', e => {
+        if( hero.getBoundingClientRect().top < 0 ) {
+            navBar.classList.add('fixedBar');
+            body.classList.add('bodyScroll');
+        } else {
+            navBar.classList.remove('fixedBar');
+            body.classList.remove('bodyScroll');
+        }
+    });
+}
