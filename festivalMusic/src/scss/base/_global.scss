@@ -13,6 +13,10 @@ html {
 body {
     font-family: v.$main_font;
     font-size: 1.6rem;
+
+    &.body-fixed {
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3 { margin: 0 0 5rem 0; }
