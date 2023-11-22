@@ -46,6 +46,10 @@ body {
     }
 }
 
+img {
+    width: 100%;
+}
+
 /* Herencia del modelo de caja a todos los elementos descendientes */
 *, *:before, *:after {
     box-sizing: inherit;
@@ -499,14 +503,21 @@ header {
 }
 
 /* Contact Form */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .contact-section h2{
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
 }
 
-.form {
+/* .form {
     background-color: #43628a;
     box-shadow: 2px 1.5px 5px rgba(0, 0, 0, 0.678);
-    width: min(60rem, 100%); /*Utlizar el valor mas pequeno */
+    width: min(60rem, 100%); 
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -571,6 +582,61 @@ header {
     width: 50%;
     color: black;
     background-color: var(--color-white);
+} */
+
+.nav-icon {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
+    transition: 0.3s all ease-in-out;
+}
+
+.a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(10px, -10px);
+    box-shadow: -20px 20px 30px rgba(0,0,0,0.5);
+}
+
+.a.facebook:hover {
+    background-color: #3a5796;
+}
+
+.a.twitter:hover {
+    background-color: #1c9ceb;
+}
+
+.a.linkedin:hover {
+    background-color: #0371ae;
+}
+
+.a.instagram:hover {
+    background-color: #d12c7a;
+}
+
+.a svg {
+    width: 30px;
+    height: 30px;
+}
+
+.a svg path,
+.a svg circle {
+    transition: 0.3s all ease-in-out;
+    fill: #292929;
+}
+
+.a:hover svg path,
+.a:hover svg circle {
+    fill: #fff;
 }
 
 .footer {
