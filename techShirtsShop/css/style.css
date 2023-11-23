@@ -1,7 +1,7 @@
 :root {
   /* Color Palette */
-    --primary: #9C2780;
-    --primaryDark: #891190;
+    --primary: brown;
+    --primaryDark: darkred;
     --secundary: #FFCE00;
     --secundaryDark: rgb(233, 287, 2);
     --white: #fff;
